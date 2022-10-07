@@ -20,12 +20,12 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <div class="main-nav">
+        <div class="nav-container">
           <nav class="nav-list">
             <a class="logo" href="./index.html" lang="en"
               >Web<span class="logo-span-top">Studio</span></a
             >
-            <ul class="menu-nav list">
+            <ul class="nav-menu list">
               <li class="item"><a class="link" href="./index.html">Студія</a></li>
               <li class="item"><a class="link current" href="./portfolio.html">Портфоліо</a></li>
               <li class="item"><a class="link" href="#">Контакти</a></li>
@@ -41,113 +41,135 @@
       </div>
     </header>
     <main>
-      <section class="filters">
-        <h1 class="visually-hidden">Портфоліо</h1>
-        <ul class="list">
-          <li><button class="filters-button current" type="button">Усі</button></li>
-          <li><button class="filters-button" type="button">Веб-сайти</button></li>
-          <li><button class="filters-button" type="button">Додатки</button></li>
-          <li><button class="filters-button" type="button">Дизайн</button></li>
-          <li><button class="filters-button" type="button">Маркетинг</button></li>
-        </ul>
-        <ul class="list">
-          <li class="project">
-            <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img src="./images/project1.jpg" alt="Екран ноутбука" width="370" height="294" />
-              <h2 class="project-title">Технокряк</h2>
-              <p class="project-descr">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="project">
-            <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img
-                src="./images/project2.jpg"
-                alt="В стрибку один баскетболіст забирає м'яч в іншого баскетболіста"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-              <p class="project-descr">Дизайн</p>
-            </a>
-          </li>
-          <li class="project">
-            <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img
-                src="./images/project3.jpg"
-                alt="Логотип ресторану Seafood"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">Ресторан <span lang="en">Seafood</span></h2>
-              <p class="project-descr">Додаток</p>
-            </a>
-          </li>
-          <li class="project">
-            <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img src="./images/project4.jpg" alt="Чорні навушники" width="370" height="294" />
-              <h2 class="project-title">
-                Проєкт <span class="project-text" lang="en">prime</span>
-              </h2>
-              <p class="project-descr">Маркетинг</p>
-            </a>
-          </li>
-          <li class="project">
-            <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img
-                src="./images/project5.jpg"
-                alt="Дві коробки: одна біла, інша коричнева"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">
-                Проєкт <span class="project-text" lang="en">boxes</span>
-              </h2>
-              <p class="project-descr">Додаток</p>
-            </a>
-          </li>
-          <li class="project">
-            <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img
-                src="./images/project6.jpg"
-                alt="Монітор комп'ютера Apple"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title" lang="en">
-                Inspiration has no <span class="project-text">borders</span>
-              </h2>
-              <p class="project-descr">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="project">
-            <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img src="./images/project7.jpg" alt="Розгорнута книжка" width="370" height="294" />
-              <h2 class="project-title">
-                Видання <span class="project-text" lang="en">limited edition</span>
-              </h2>
-              <p class="project-descr">Дизайн</p>
-            </a>
-          </li>
-          <li class="project">
-            <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img src="./images/project8.jpg" alt="Етикетка" width="370" height="294" />
-              <h2 class="project-title">Проєкт <span lang="en">LAB</span></h2>
-              <p class="project-descr">Маркетинг</p>
-            </a>
-          </li>
-          <li class="project">
-            <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img
-                src="./images/project9.jpg"
-                alt="Людина працює за ноутбуком"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title project-text" lang="en">Growing business</h2>
-              <p class="project-descr">Додаток</p>
-            </a>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфоліо</h1>
+          <ul class="filters-list list">
+            <li class="item"><button class="filters-button current" type="button">Усі</button></li>
+            <li class="item"><button class="filters-button" type="button">Веб-сайти</button></li>
+            <li class="item"><button class="filters-button" type="button">Додатки</button></li>
+            <li class="item"><button class="filters-button" type="button">Дизайн</button></li>
+            <li class="item"><button class="filters-button" type="button">Маркетинг</button></li>
+          </ul>
+          <ul class="project-list list">
+            <li class="item">
+              <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <img src="./images/project1.jpg" alt="Екран ноутбука" width="370" height="294" />
+                <div class="project-container">
+                  <h2 class="project-title">Технокряк</h2>
+                  <p class="project-descr">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <img
+                  src="./images/project2.jpg"
+                  alt="В стрибку один баскетболіст забирає м'яч в іншого баскетболіста"
+                  width="370"
+                  height="294"
+                />
+                <div class="project-container">
+                  <h2 class="project-title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="project-descr">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <img
+                  src="./images/project3.jpg"
+                  alt="Логотип ресторану Seafood"
+                  width="370"
+                  height="294"
+                />
+                <div class="project-container">
+                  <h2 class="project-title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="project-descr">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <img src="./images/project4.jpg" alt="Чорні навушники" width="370" height="294" />
+                <div class="project-container">
+                  <h2 class="project-title">
+                    Проєкт <span class="project-text" lang="en">prime</span>
+                  </h2>
+                  <p class="project-descr">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <img
+                  src="./images/project5.jpg"
+                  alt="Дві коробки: одна біла, інша коричнева"
+                  width="370"
+                  height="294"
+                />
+                <div class="project-container">
+                  <h2 class="project-title">
+                    Проєкт <span class="project-text" lang="en">boxes</span>
+                  </h2>
+                  <p class="project-descr">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <img
+                  src="./images/project6.jpg"
+                  alt="Монітор комп'ютера Apple"
+                  width="370"
+                  height="294"
+                />
+                <div class="project-container">
+                  <h2 class="project-title" lang="en">
+                    Inspiration has no <span class="project-text">borders</span>
+                  </h2>
+                  <p class="project-descr">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <img src="./images/project7.jpg" alt="Розгорнута книжка" width="370" height="294" />
+                <div class="project-container">
+                  <h2 class="project-title">
+                    Видання <span class="project-text" lang="en">limited edition</span>
+                  </h2>
+                  <p class="project-descr">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <img src="./images/project8.jpg" alt="Етикетка" width="370" height="294" />
+                <div class="project-container">
+                  <h2 class="project-title">Проєкт <span lang="en">LAB</span></h2>
+                  <p class="project-descr">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a class="project-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <img
+                  src="./images/project9.jpg"
+                  alt="Людина працює за ноутбуком"
+                  width="370"
+                  height="294"
+                />
+                <div class="project-container">
+                  <h2 class="project-title project-text" lang="en">Growing business</h2>
+                  <p class="project-descr">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
