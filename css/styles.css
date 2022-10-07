@@ -50,6 +50,8 @@ img {
 
 /* start header */
 .page-header {
+   max-width: 1600px;
+   margin: 0 auto;
    border-bottom: 1px solid var(--color-border);
 }
 
@@ -59,9 +61,8 @@ img {
    align-items: center;
 }
 
-.logo {
-   margin-right: 93px;
 
+.logo {
    color: var(--color-brand);
    font-family: 'Raleway', sans-serif;
    font-size: 26px;
@@ -70,17 +71,21 @@ img {
    text-decoration: none;
 }
 
-.logo-span-top {
-   color: var(--color-black);
+.nav-list .logo {
+   margin-right: 93px;
 }
 
-.menu-nav {
-   display: flex;
+.logo-span-top {
+   color: var(--color-black);
 }
 
 .menu-nav .item:not(:last-child),
 .nav-contact .item:not(:last-child) {
    margin-right: 50px;
+}
+
+.menu-nav {
+   display: flex;
 }
 
 .menu-nav .link {
@@ -115,23 +120,22 @@ img {
 
 /* start main  */
 .section {
+   max-width: 1600px;
+   margin: 0 auto;
    padding: 94px 0;
 }
 
 /* початок сторінки "Студія" */
 /* hero-section */
 .hero-section {
+   padding: 200px 0;
    background-color: var(--bgc-primary)
 }
 
-.hero-container {
-   width: 696px;
-   padding: 106px 0;
-   text-align: center;
-}
-
 .hero-title {
-   margin-bottom: 30px;
+   max-width: 696px;
+   text-align: center;
+   margin: 0 auto 30px;
 
    color: var(--color-white);
    font-size: 44px;
@@ -142,7 +146,9 @@ img {
 }
 
 .hero-button {
+   display: block;
    padding: 10px 32px;
+   margin: 0 auto;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
    border: transparent;
@@ -182,7 +188,7 @@ img {
 }
 
 .benefits-list .item {
-   width: 270px;
+   max-width: 270px;
 }
 
 .benefits-list .item:not(:last-child) {
@@ -191,6 +197,7 @@ img {
 
 .benefits-title {
    margin-bottom: 10px;
+
    text-transform: uppercase;
 }
 
@@ -200,16 +207,16 @@ img {
 }
 
 /* skills-section */
+.skills-section {
+   margin-top: -94px;
+}
+
 .title {
    text-align: center;
    margin-bottom: 50px;
 
    font-size: 36px;
    line-height: 1.17;
-}
-
-.skills-section {
-   margin-top: -94px;
 }
 
 .skills-list {
@@ -235,7 +242,6 @@ img {
 
 .team-list .item {
    background-color: var(--color-white);
-   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
 }
 
@@ -304,11 +310,19 @@ img {
 /* кінець сторінки"Портфоліо" */
 
 /* start footer */
-.footer {
+.page-footer {
+   max-width: 1600px;
+   margin: 0 auto;
+   padding: 60px 0;
    background-color: var(--bgc-primary);
 }
 
-.logo-span-bottom {
+.page-footer .logo {
+   display: block;
+   margin-bottom: 20px;
+}
+
+.logo-span-footer {
    color: var(--color-white);
 }
 
@@ -317,20 +331,24 @@ img {
    line-height: 1.71;
 }
 
+.address .item:not(:last-child) {
+   margin-bottom: 9px;
+}
+
 .link-address {
    color: var(--color-white);
    text-decoration: none;
 }
 
-.link-contact-bottom {
+.link-contact-footer {
    color: var(--color-white-secondary);
    text-decoration: none;
 }
 
 .link-address:hover,
 .link-address:focus,
-.link-contact-bottom:hover,
-.link-contact-bottom:focus {
+.link-contact-footer:hover,
+.link-contact-footer:focus {
    color: var(--color-brand);
 }
 
