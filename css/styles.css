@@ -51,8 +51,6 @@ img {
 
 /* start header */
 .page-header {
-   max-width: 1600px;
-   margin: 0 auto;
    border-bottom: 1px solid var(--color-border);
 }
 
@@ -72,24 +70,20 @@ img {
    text-decoration: none;
 }
 
-.nav-list .logo {
+.logo-header {
    margin-right: 93px;
 }
 
-.logo-span-top {
+.logo-span-header {
    color: var(--color-black);
-}
-
-.nav-menu .item:not(:last-child),
-.nav-contact .item:not(:last-child) {
-   margin-right: 50px;
 }
 
 .nav-menu {
    display: flex;
+   gap: 50px;
 }
 
-.nav-menu .link {
+.menu-link {
    display: block;
    padding: 32px 0;
 
@@ -99,21 +93,27 @@ img {
    text-decoration: none;
 }
 
-.nav-contact {
+.contact-list {
    display: flex;
    margin-left: auto;
+   gap: 50px;
 }
 
-.nav-contact .link {
+.contact-link-header {
+   display: block;
+   padding: 32px 0;
+
    color: var(--text-color-secondary);
    font-weight: 500;
    letter-spacing: 0.02em;
    text-decoration: none;
 }
 
-.link:hover,
-.link:focus,
-.link.current {
+.menu-link:hover,
+.menu-link:focus,
+.menu-link.current,
+.contact-link:hover,
+.contact-link:focus {
    color: var(--color-brand);
 }
 
@@ -121,14 +121,14 @@ img {
 
 /* start main  */
 .section {
-   max-width: 1600px;
-   margin: 0 auto;
    padding: 94px 0;
 }
 
 /* початок сторінки "Студія" */
 /* hero-section */
 .hero-section {
+   max-width: 1600px;
+   margin: 0 auto;
    padding: 200px 0;
    background-color: var(--bgc-primary)
 }
@@ -152,7 +152,7 @@ img {
    margin: 0 auto;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
-   border: transparent;
+   border: none;
 
    color: var(--color-white);
    background-color: var(--color-brand);
@@ -171,6 +171,11 @@ img {
 }
 
 /* benefits section */
+.benefits-section {
+   max-width: 1600px;
+   margin: 0 auto;
+}
+
 .visually-hidden {
    position: absolute;
    white-space: nowrap;
@@ -186,14 +191,11 @@ img {
 
 .benefits-list {
    display: flex;
+   gap: 30px;
 }
 
-.benefits-list .item {
+.benefits-item {
    width: 270px;
-}
-
-.benefits-list .item:not(:last-child) {
-   margin-right: 30px;
 }
 
 .benefits-title {
@@ -209,7 +211,9 @@ img {
 
 /* skills-section */
 .skills-section {
-   margin-top: -94px;
+   max-width: 1600px;
+   margin: 0 auto;
+   padding-top: 0;
 }
 
 .title {
@@ -222,33 +226,27 @@ img {
 
 .skills-list {
    display: flex;
-}
-
-.skills-list .item {
-   width: 370px;
-}
-
-.skills-list .item:not(:last-child) {
-   margin-right: 30px;
+   gap: 30px;
 }
 
 /* team-section */
 .team-section {
+   max-width: 1600px;
+   margin: 0 auto;
+
    background-color: var(--bgc-secondary)
 }
 
 .team-list {
    display: flex;
+   gap: 30px;
 }
 
-.team-list .item:not(:last-child) {
-   margin-right: 30px;
-}
-
-.team-list .item {
-   width: 270px;
-   background-color: var(--color-white);
+.team-item {
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
+
+   background-color: var(--color-white);
 }
 
 .team-container {
@@ -272,20 +270,22 @@ img {
 /* кінець сторінки "Студія" */
 
 /* початок сторінки "Портфоліо" */
+.portfolio-section {
+   max-width: 1600px;
+   margin: 0 auto;
+}
+
 .filters-list {
    display: flex;
    justify-content: center;
    margin-bottom: 50px;
-}
-
-.filters-list .item:not(:last-child) {
-   margin-right: 8px;
+   gap: 8px;
 }
 
 .filters-button {
    padding: 6px 22px;
    border-radius: 4px;
-   border: transparent;
+   border: none;
 
    background-color: var(--bgc-secondary);
    font-family: inherit;
@@ -308,7 +308,7 @@ img {
    gap: 30px;
 }
 
-.project-list .item {
+.project-item {
    flex-basis: calc((100% - 60px) / 3);
    border: 1px solid var(--color-border-secondary);
    border-top: none;
@@ -347,13 +347,11 @@ img {
 
 /* start footer */
 .page-footer {
-   max-width: 1600px;
-   margin: 0 auto;
    padding: 60px 0;
    background-color: var(--bgc-primary);
 }
 
-.page-footer .logo {
+.logo-footer {
    display: block;
    margin-bottom: 20px;
 }
@@ -367,24 +365,26 @@ img {
    line-height: 1.71;
 }
 
-.address .item:not(:last-child) {
-   margin-bottom: 9px;
+.address-list {
+   display: flex;
+   flex-direction: column;
+   gap: 9px;
 }
 
-.link-address {
+.address-link {
    color: var(--color-white);
    text-decoration: none;
 }
 
-.link-contact-footer {
+.contact-link-footer {
    color: var(--color-white-secondary);
    text-decoration: none;
 }
 
-.link-address:hover,
-.link-address:focus,
-.link-contact-footer:hover,
-.link-contact-footer:focus {
+.address-link:hover,
+.address-link:focus,
+.contact-link-footer:hover,
+.contact-link-footer:focus {
    color: var(--color-brand);
 }
 
