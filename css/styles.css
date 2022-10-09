@@ -72,6 +72,8 @@ img {
 
 .logo-header {
    margin-right: 93px;
+   padding-top: 24px;
+   padding-bottom: 25px;
 }
 
 .logo-span-header {
@@ -171,11 +173,6 @@ img {
 }
 
 /* benefits section */
-.benefits-section {
-   max-width: 1600px;
-   margin: 0 auto;
-}
-
 .visually-hidden {
    position: absolute;
    white-space: nowrap;
@@ -211,8 +208,6 @@ img {
 
 /* skills-section */
 .skills-section {
-   max-width: 1600px;
-   margin: 0 auto;
    padding-top: 0;
 }
 
@@ -231,9 +226,6 @@ img {
 
 /* team-section */
 .team-section {
-   max-width: 1600px;
-   margin: 0 auto;
-
    background-color: var(--bgc-secondary)
 }
 
@@ -270,11 +262,6 @@ img {
 /* кінець сторінки "Студія" */
 
 /* початок сторінки "Портфоліо" */
-.portfolio-section {
-   max-width: 1600px;
-   margin: 0 auto;
-}
-
 .filters-list {
    display: flex;
    justify-content: center;
@@ -298,6 +285,8 @@ img {
 .filters-button:hover,
 .filters-button:focus,
 .filters-button.current {
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
    color: var(--color-white);
    background-color: var(--color-brand);
 }
